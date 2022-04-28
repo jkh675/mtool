@@ -1,0 +1,45 @@
+.contianer {
+    display: inline-block;
+    padding: 20px;
+    background-color: rgb(198,198,198);
+    border-top: 3px solid rgb(219,219,219);
+    border-left: 2px solid rgb(219,219,219);
+    border-bottom: 3px solid rgb(91,91,91);
+    border-right: 2px solid rgb(91,91,91);
+}
+
+.compositeTable {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 60px);
+    grid-template-rows: repeat(3, 60px);
+    background-color: rgb(139,139,139);
+}
+
+.compositeItem {
+    border-top: 2px solid rgb(55,55,55);
+    border-left: 2px solid rgb(55,55,55);
+    border-right: 2px solid rgb(255,255,255);
+    border-bottom: 2px solid rgb(255,255,255);
+}
+
+.compositeArrow {
+    display: inline;
+    position: relative;
+    top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    z-index: 0;
+}
+
+.compositeProduct {
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    padding: 5px;
+    border-top: 2px solid rgb(55,55,55);
+    border-left: 2px solid rgb(55,55,55);
+    border-right: 2px solid rgb(255,255,255);
+    border-bottom: 2px solid rgb(255,255,255);
+    aspect-ratio: 1 / 1;
+    background-color: rgb(139,139,139);
+}

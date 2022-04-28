@@ -1,16 +1,22 @@
+@font-face {
+    font-family: 'Minecraft';
+    src: local('Minecraft'), url('/font/Minecraft.ttf') format('truetype');
+}
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-weight: 100;
+    font-family: "Minecraft";
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+    user-select: none;
+    box-sizing: border-box;
 }

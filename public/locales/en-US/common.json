@@ -1,0 +1,28 @@
+{
+    "fireworkGeneratorButtonText": "Firework Generator",
+    "fireworkGeneratorTitle": "Firework Generator",
+
+    "fireworkGeneratorExplosionType": "Explosion Type",
+    "fireworkGeneratorFireworkTypeNone": "None",
+    "fireworkGeneratorFireworkTypeSmallBall": "Small Ball",
+    "fireworkGeneratorFireworkTypeLargeBall": "Large Ball",
+    "fireworkGeneratorFireworkTypeStar": "Star",
+    "fireworkGeneratorFireworkTypeCreeper": "Creeper",
+    "fireworkGeneratorFireworkTypeExplosion": "Explosion",
+
+    "fireworkGeneratorEffectTitle": "Firework Effect",
+    "fireworkGeneratorFlickerSwitch": "Flicker",
+    "fireworkGeneratorTrailSwitch": "Trail",
+    "fireworkGeneratorFlightTime": "Firework Flight Time",
+    "fireworkGeneratorResetButton": "Reset",
+    
+    "fireworkGeneratorCopyButtonText": "Copy",
+    "fireworkGenerator.copyCommandSuccess": "Copied firework generator command to clipboard.",
+    
+    "colorSelector.title": "Color Selector",
+    "colorSelector.mainColor.title": "Main Color",
+
+    "colorSelector.mainColor.addColorText": "Add Main Color",
+    "colorSelector.fadeColor.title": "Fade Color(the color's that will be fade after firework explode)",
+    "colorSelector.fadeColor.addColorText": "Add Fade Color"
+}

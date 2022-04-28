@@ -1,0 +1,144 @@
+.fireworkTypeForm {
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    color: white;
+    margin: 0 10px;
+    font-family: "Minecraft";
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+    grid-area: 1 / 1 / 1 / 1;
+}
+
+.container {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.fireworkGeneratorGrid {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    top: 75px;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    overflow-y: scroll;
+}
+
+.fireworkConfigurationGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 50% 50%;
+    overflow-y: hidden;
+    bottom: 0;
+}
+
+.flickerAndTrailSwitchGroup {
+    grid-area: 1 / 2 / 1 / 2;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    color: white;
+    font-family: "Minecraft";
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    border-radius: 10px;
+    margin: 0 10px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.589);
+}
+.flickerAndTrailSwitch {
+    display: inline-block;
+    margin: 0 10px;
+    font-family: "Minecraft";
+}
+
+.fireworkTypeFormTitle {
+    color: white;
+    font-family: "Minecraft";
+    text-align: center;
+}
+
+.fireworkTypeRadioText {
+    font-family: "Minecraft";
+    margin: 0;
+    padding: 0;
+}
+
+.fireworkTypeRadio {
+    font-family: "Minecraft";
+    color: #fff;
+}
+
+.flightSliderTextField {
+    font-family: "Minecraft";
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.flightSliderTextField::before {
+    content: "";
+}
+.flightTimeBlock {
+    border-radius: 10px;
+    margin:10px 0;
+    background-color: rgba(255,255,255, 0.2);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.589);
+    backdrop-filter: blur(20px);
+    padding: 10px;
+}
+.command {
+    font-family: "Minecraft";
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+}
+.command_string {
+    display: inline-block;
+}
+.colorSelectorArea {
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    color: white;
+    font-family: "Minecraft";
+    background-color: rgba(158, 158, 158, 0.5);
+    border-radius: 10px;
+    margin: 0 10px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.589);
+    left: 0;
+    right: 0;
+    grid-area: 2 / 1 / 2 / span 2;
+}
+.colorSelectorAreaTitle {
+    font-family: "Minecraft";
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.colorSelectorPaper {
+    padding: 10px;
+    height: 100%;
+    margin: 0 5px;
+    font: "Minecraft";
+}
+.colorSelectorGridItem {
+    padding: 0;
+    margin: 0;
+}
+.AddIcon {
+    font-family: "Minecraft";
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+    float: right;
+}
+.mainColorSelectorTitle {
+    display: inline-block;
+}
+.mainColorList {
+
+}

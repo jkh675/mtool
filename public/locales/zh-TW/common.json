@@ -1,0 +1,28 @@
+{
+    "fireworkGeneratorButtonText": "烟火生成器",
+    "fireworkGeneratorTitle": "烟火生成器",
+
+    "fireworkGeneratorExplosionType": "爆炸形狀",
+    "fireworkGeneratorFireworkTypeNone": "無",
+    "fireworkGeneratorFireworkTypeSmallBall": "小球",
+    "fireworkGeneratorFireworkTypeLargeBall": "大球",
+    "fireworkGeneratorFireworkTypeStar": "星形",
+    "fireworkGeneratorFireworkTypeCreeper": "苦力怕",
+    "fireworkGeneratorFireworkTypeExplosion": "炸裂",
+
+    "fireworkGeneratorEffectTitle": "烟火效果",
+    "fireworkGeneratorFlickerSwitch": "閃爍效果",
+    "fireworkGeneratorTrailSwitch": "尾跡效果",
+    "fireworkGeneratorFlightTime": "飛行時間",
+    "fireworkGeneratorResetButton": "重置",
+
+    "fireworkGeneratorCopyButtonText": "複製",
+    "fireworkGenerator.copyCommandSuccess": "已複製烟火生成器指令",
+
+    "colorSelector.title": "顏色選擇器",
+    "colorSelector.mainColor.title": "主顏色",
+
+    "colorSelector.mainColor.addColorText": "添加主顏色",
+    "colorSelector.fadeColor.title": "淡化顏色(爆炸以後漸變的顔色)",
+    "colorSelector.fadeColor.addColorText": "添加淡化顏色"
+}
