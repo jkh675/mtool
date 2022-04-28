@@ -58,11 +58,28 @@ function MinecraftCompositeTable (props) {
             <div className={style.compositeProduct}>
                 {(() => {
                     if (props.outputItem.item_id) {
-                        return <MinecraftItem item_id={props.outputItem.item_id} />
+                        return (
+                            <MinecraftItem
+                                count={props.outputItem.count}
+                                item_id={props.outputItem.item_id}
+                            />
+                        );
                     } else if (props.outputItem.item_index) {
-                        return <MinecraftItem item_index={props.outputItem.item_index} />
+                        return (
+                            <MinecraftItem
+                                count={props.outputItem.count}
+                                item_index={props.outputItem.item_index}
+                            />
+                        );
                     } else if (props.outputItem.item_readable_name) {
-                        return <MinecraftItem item_readable_name={props.outputItem.item_readable_name} />
+                        return (
+                            <MinecraftItem
+                                count={props.outputItem.count}
+                                item_readable_name={
+                                    props.outputItem.item_readable_name
+                                }
+                            />
+                        );
                     }
                 })()}
             </div>
