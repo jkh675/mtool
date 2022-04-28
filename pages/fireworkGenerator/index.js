@@ -1,11 +1,11 @@
 import MinecraftItem from "/components/MinecraftItem";
 import MinecraftCompositeTable from "/components/MinecraftCompositeTable";
-import ColorSelectorListItem from "./ColorSelectorListItem";
+import ColorSelectorListItem from "/components/ColorSelectorListItem";
 import MinecraftButton from "/components/MinecraftButton";
 import { useTranslation } from "react-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import React from "react"
-import style from "../styles/FireworkGenerator.module.css";
+import style from "/styles/FireworkGenerator.module.css";
 
 import {
     FormControl,

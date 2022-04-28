@@ -1,4 +1,4 @@
-import style from "./ColorSelectorListItem.module.css";
+import style from "../styles/ColorSelectorListItem.module.css";
 
 import { Grid, Fab, Divider } from "@mui/material";
 import ClearIcon from "@mui/icons-material/Clear";
