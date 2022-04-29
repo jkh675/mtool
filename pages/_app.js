@@ -7,7 +7,7 @@ import Link from "next/link";
 function App ({ Component, pageProps }) {
     return (
         <div>
-            <div className={styles.backdrop}></div>
+            <img src="/img/32.png" className={styles.backdrop}></img>
 
             <div className={styles.topbar}>
                 <Link href="/">

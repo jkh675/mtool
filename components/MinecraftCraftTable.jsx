@@ -1,8 +1,7 @@
-import style from '../styles/MinecraftCompositeTable.module.css'
+import style from "../styles/MinecraftCraftTable.module.css";
 import MinecraftItem from "./MinecraftItem";
 
-
-function MinecraftCompositeTable (props) {
+function MinecraftCraftTable (props) {
     const createEmptyItem = (n) => {
         var elements = [];
         for (let i = 0; i < n; i++) {
@@ -22,6 +21,7 @@ function MinecraftCompositeTable (props) {
                                     item_id={element.item_id}
                                     key={index}
                                     count={element.count}
+                                    tooltip={element.tooltip}
                                 />
                             </div>
                         );
@@ -31,6 +31,8 @@ function MinecraftCompositeTable (props) {
                                 <MinecraftItem
                                     item_index={element.item_index}
                                     key={index}
+                                    count={element.count}
+                                    tooltip={element.tooltip}
                                 />
                             </div>
                         );
@@ -42,6 +44,8 @@ function MinecraftCompositeTable (props) {
                                         element.item_readable_name
                                     }
                                     key={index}
+                                    count={element.count}
+                                    tooltip={element.tooltip}
                                 />
                             </div>
                         );
@@ -62,6 +66,7 @@ function MinecraftCompositeTable (props) {
                             <MinecraftItem
                                 count={props.outputItem.count}
                                 item_id={props.outputItem.item_id}
+                                tooltip={props.outputItem.tooltip}
                             />
                         );
                     } else if (props.outputItem.item_index) {
@@ -69,6 +74,7 @@ function MinecraftCompositeTable (props) {
                             <MinecraftItem
                                 count={props.outputItem.count}
                                 item_index={props.outputItem.item_index}
+                                tooltip={props.outputItem.tooltip}
                             />
                         );
                     } else if (props.outputItem.item_readable_name) {
@@ -78,6 +84,7 @@ function MinecraftCompositeTable (props) {
                                 item_readable_name={
                                     props.outputItem.item_readable_name
                                 }
+                                tooltip={props.outputItem.tooltip}
                             />
                         );
                     }
@@ -87,4 +94,4 @@ function MinecraftCompositeTable (props) {
     );
 }
 
-export default MinecraftCompositeTable;
+export default MinecraftCraftTable;

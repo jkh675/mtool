@@ -13,11 +13,13 @@
         "@emotion/styled": "^11.8.1",
         "@mui/icons-material": "^5.6.2",
         "@mui/material": "^5.6.3",
+        "fs": "^0.0.1-security",
         "i18next": "^21.6.16",
         "i18next-xhr-backend": "^3.2.2",
         "minecraft-textures": "^1.18.1",
         "next": "12.1.5",
         "next-i18next": "^11.0.0",
+        "notistack": "^2.0.4",
         "react": "18.0.0",
         "react-dom": "18.0.0",
         "react-i18next": "^11.16.7"
