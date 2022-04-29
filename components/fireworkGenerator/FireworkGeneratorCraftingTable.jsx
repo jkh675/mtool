@@ -150,7 +150,17 @@ function FireworkGeneratorCraftingTable(props) {
 
         newCraftArray.push({ item_id: "minecraft:paper", count: 1 });
         newCraftMaterial.push({ item_id: "minecraft:paper", count: 1 });
-        setCraftMaterial(newCraftMaterial)
+        var duplicateMaterial = []
+
+        newCraftMaterial.map((element, index) => {
+            if (duplicateMaterial.find(element2 => element2.item_id === element.item_id)) {
+                duplicateMaterial.find(element2 => element2.item_id === element.item_id).count += element.count;
+            } else {
+                duplicateMaterial.push(element);
+            }
+        })
+
+        setCraftMaterial(duplicateMaterial);
         setCraftArray(newCraftArray);
     }, [firework,t]);
 
