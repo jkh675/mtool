@@ -26,5 +26,7 @@
 
     "FireworkGenerator.FlightTime": "烟火飛行時間",
     "FireworkGeneratorCraftingTable.Material": "材料: ",
-    "FireworkGeneratorCraftingTable.AnyHead": "任何頭顱"
+    "FireworkGeneratorCraftingTable.AnyHead": "任何頭顱",
+
+    "FireworkGeneratorCommand.CopyButtonText": "複製"
 }

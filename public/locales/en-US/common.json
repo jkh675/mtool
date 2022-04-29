@@ -26,5 +26,7 @@
 
     "FireworkGenerator.FlightTime": "Firework Flight Time",
     "FireworkGeneratorCraftingTable.Material": "Materials: ",
-    "FireworkGeneratorCraftingTable.AnyHead": "Any Head"
+    "FireworkGeneratorCraftingTable.AnyHead": "Any Head",
+
+    "FireworkGeneratorCommand.CopyButtonText": "Copy"
 }

@@ -56,7 +56,7 @@ function FireworkGeneratorCraftingTable(props) {
                                     item_id: "minecraft:gunpowder",
                                     count: 1,
                                 });
-                                if (element.Explosion.Flicker) {
+                                if (element.Flicker) {
                                     itemCraftArray.push({
                                         item_id: "minecraft:glowstone_dust",
                                         count: 1,
@@ -66,7 +66,7 @@ function FireworkGeneratorCraftingTable(props) {
                                         count: 1,
                                     });
                                 }
-                                if (element.Explosion.Trail) {
+                                if (element.Trail) {
                                     itemCraftArray.push({
                                         item_id: "minecraft:diamond",
                                         count: 1,
@@ -76,7 +76,7 @@ function FireworkGeneratorCraftingTable(props) {
                                         count: 1,
                                     });
                                 }
-                                switch (element.Explosion.Type) {
+                                switch (element.Type) {
                                     case 1:
                                         itemCraftArray.push({
                                             item_id: "minecraft:fire_charge",
@@ -123,7 +123,7 @@ function FireworkGeneratorCraftingTable(props) {
                                         break;
                                 }
 
-                                element.Explosion.Colors.map((color, index) => {
+                                element.Colors.map((color, index) => {
                                     itemCraftArray.push({
                                         item_id: DYES.find(
                                             (dye) => dye.code === color
@@ -140,7 +140,7 @@ function FireworkGeneratorCraftingTable(props) {
                                 return itemCraftArray;
                             })()}
                             outputItem={{
-                                item_id: "minecraft:firework_rocket",
+                                item_id: "minecraft:firework_star",
                             }}
                         />
                     </div>
@@ -170,7 +170,7 @@ function FireworkGeneratorCraftingTable(props) {
                 itemList={craftArray}
                 outputItem={{ item_id: "minecraft:firework_rocket" }}
             />
-            <p>{t("FireworkGeneratorCraftingTable.Material")}</p>
+            <h1 style={{margin: 0,marginTop: 10}}>{t("FireworkGeneratorCraftingTable.Material")}</h1>
             {craftMaterial.map((element, index) => {
                 return (
                     <MinecraftItem

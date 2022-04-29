@@ -18,6 +18,7 @@ import React from "react"
 
 import FireworkConfigurations from "/components/fireworkGenerator/FireworkConfigurations";
 import FireworkGeneratorCraftingTable from "/components/fireworkGenerator/FireworkGeneratorCraftingTable";
+import FireworkGeneratorCommand from "/components/fireworkGenerator/FireworkGeneratorCommand";
 
 import { useTranslation } from "react-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -30,19 +31,17 @@ function FireworkGenerator () {
             Flight: 1,
             Explosions: [
                 {
-                    Explosion: {
-                        Flicker: false,
-                        Trail: false,
-                        Type: -1,
-                        Colors: [
-                            /*RGB颜色计算公式：
-                        红 + 绿*256 + 蓝*65536
-                        例：
-                        白色=255+255*256+255*65536=16777215
-                        */
-                        ],
-                        FadeColors: [],
-                    },
+                    Flicker: false,
+                    Trail: false,
+                    Type: -1,
+                    Colors: [
+                        /*RGB颜色计算公式：
+                    红 + 绿*256 + 蓝*65536
+                    例：
+                    白色=255+255*256+255*65536=16777215
+                    */
+                    ],
+                    FadeColors: [],
                 },
             ],
         },
@@ -55,13 +54,11 @@ function FireworkGenerator () {
         } else {
             const newFireworkData = { ...fireworkData };
             newFireworkData.Fireworks.Explosions.push({
-                Explosion: {
-                    Flicker: false,
-                    Trail: false,
-                    Type: -1,
-                    Colors: [],
-                    FadeColors: [],
-                },
+                Flicker: false,
+                Trail: false,
+                Type: -1,
+                Colors: [],
+                FadeColors: [],
             });
             setFireworkData(newFireworkData);
         }
@@ -171,7 +168,8 @@ function FireworkGenerator () {
                 xs={5.7}
                 className={style.fireworkGeneratorResultContainer}
             >
-                <FireworkGeneratorCraftingTable t={t} firework={fireworkData}/>
+                <FireworkGeneratorCraftingTable t={t} firework={fireworkData} />
+                <FireworkGeneratorCommand t={t} firework={fireworkData}/>
             </Grid>
         </Grid>
     );
