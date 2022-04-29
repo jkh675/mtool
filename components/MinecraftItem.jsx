@@ -1,22 +1,13 @@
 import Textures from "minecraft-textures/dist/textures/1.16.js";
 import style from "../styles/MinecraftItem.module.css";
 import React from "react";
-
+import { Tooltip } from "@mui/material";
 /**
  * @param {string} item_id
  * @param {string} item_readable_name
  * @param {integer} item_index
  */
 function MinecraftItem (props) {
-    const [tooltipState, setTooltipState] = React.useState(false);
-    const [tooltipPosition, setTooltipPosition] = React.useState({ x: 0, y: 0 });
-
-    const whenMouseInLine = (event) => {
-        const { clientX, clientY } = event;
-        setTooltipPosition({ x: clientX, y: clientY });
-        setTooltipState(true);
-    }
-    
     const [itemObject, setItemObject] = React.useState(Textures.items[1]);
 
     React.useEffect(() => {
@@ -38,27 +29,23 @@ function MinecraftItem (props) {
 
 
     return (
-        <div>
-            <div
-                onMouseMove={whenMouseInLine}
-                onMouseLeave={() => setTooltipState(false)}
-                onMouseEnter={() => setTooltipState(true)}
-                className={style.item_image}
-            >
+        <Tooltip 
+            title={
+                props.tooltip?
+                props.tooltip
+                :
+                itemObject.readable
+            } 
+            followCursor 
+            arrow
+        >
+            <div className={style.item_image}>
                 <img src={itemObject.texture} />
-                {props.count ? <div className={style.item_count}>{props.count}</div> : null}
+                {props.count ? (
+                    <div className={style.item_count}>{props.count}</div>
+                ) : null}
             </div>
-            <div
-                className={style.tooltips}
-                style={{
-                    display: tooltipState ? "block" : "none",
-                    top: `${tooltipPosition.y}px`,
-                    left: `${tooltipPosition.x}px`,
-                }}
-            >
-                {itemObject.readable}
-            </div>
-        </div>
+        </Tooltip>
     );
 }
 

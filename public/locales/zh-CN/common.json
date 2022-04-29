@@ -2,27 +2,31 @@
     "fireworkGeneratorButtonText": "烟火生成器",
     "fireworkGeneratorTitle": "烟火生成器",
 
-    "fireworkGeneratorExplosionType": "爆炸形狀",
-    "fireworkGeneratorFireworkTypeNone": "无",
-    "fireworkGeneratorFireworkTypeSmallBall": "小球",
-    "fireworkGeneratorFireworkTypeLargeBall": "大球",
-    "fireworkGeneratorFireworkTypeStar": "星形",
-    "fireworkGeneratorFireworkTypeCreeper": "苦力怕",
-    "fireworkGeneratorFireworkTypeExplosion": "炸裂",
+    "FireworkConfigurationsSwitch.TrailSwitchText": "轨迹效果",
+    "FireworkConfigurationsSwitch.FlickerSwitchText": "闪烁效果",
 
-    "fireworkGeneratorEffectTitle": "烟火效果",
-    "fireworkGeneratorFlickerSwitch": "闪烁效果",
-    "fireworkGeneratorTrailSwitch": "轨迹效果",
-    "fireworkGeneratorFlightTime": "飞行时间",
-    "fireworkGeneratorResetButton": "重置",
+    "FireworkConfigurationsTypeSelector.Selector.Title": "爆炸效果选择",
+    "FireworkConfigurationsTypeSelector.None": "无",
+    "FireworkConfigurationsTypeSelector.SmallBall": "小球",
+    "FireworkConfigurationsTypeSelector.BigBall": "大球",
+    "FireworkConfigurationsTypeSelector.Star": "星形",
+    "FireworkConfigurationsTypeSelector.Creeper": "苦力怕",
+    "FireworkConfigurationsTypeSelector.Blast": "爆炸",
 
-    "fireworkGeneratorCopyButtonText": "复制",
-    "fireworkGenerator.copyCommandSuccess": "烟火生成器命令已复制到剪贴板",
+    "FireworkConfigurationsColorSelector.AddColorTitle": "添加爆炸颜色",
+    "FireworkConfigurationsFadeColorSelector.AddColorTitle": "添加渐变颜色(爆炸后渐变的颜色)",
 
-    "colorSelector.title": "颜色选择器",
-    "colorSelector.mainColor.title": "主颜色",
+    "FireworkConfigurationsColorListItem.Selector.Title": "顔色",
 
-    "colorSelector.mainColor.addColorText": "添加主颜色",
-    "colorSelector.fadeColor.title": "淡化颜色(爆炸后渐变的颜色)",
-    "colorSelector.fadeColor.addColorText": "添加淡化颜色"
+    "FireworkGenerator.AccordionSummaryEffectTitle": "爆炸效果",
+    "FireworkGenerator.DeleteEffect": "删除爆炸效果",
+    "FireworkGenerator.AddEffect": "添加爆炸效果",
+
+    "FireworkGenerator.EffectFullAlert": "爆炸效果已满",
+
+    "FireworkGenerator.FlightTime": "烟火飞行时间",
+    "FireworkGeneratorCraftingTable.Material": "材料: ",
+    "FireworkGeneratorCraftingTable.AnyHead": "任何头颅",
+
+    "FireworkGeneratorCommand.CopyButtonText": "复制"
 }
